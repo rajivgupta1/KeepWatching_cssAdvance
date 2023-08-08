@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: orange;
+}
+
+.container{
+    background: blue;
+    width: 80vw;
+    margin: auto;
+    margin-top: 3rem;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    animation: h2 0.2s infinite ;
+    
+
+}
+
+.parent{
+    background: black;
+    color: black;
+    width: 400px;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid red;
+    border-radius: 10px;
+    animation: box 0.5s infinite reverse ;
+
+}
+
+h2{
+    animation: h2 0.2s infinite ;
+    font-size: xx-large;
+
+}
+
+h1{
+    animation: circle 2s infinite ;
+    font-size: xx-large;
+    
+
+}
+
+.ball{
+    background: radial-gradient(white, red);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+/* 
+    animation: circle duration timing-function delay
+               iteration-count direction fill-mode;
+} */
+
+   animation: circle 2s infinite;
+}
+
+.span{
+    width: 40vw;
+    height: 40vh;
+    background: red;
+}
+
+@keyframes circle {
+    0% {
+       background: radial-gradient(white, red);
+       top: 20px;
+       left: 100px;
+    }
+
+    25% {
+        background: radial-gradient(white, yellow);
+        top: 20px;
+        left: 70vw;
+     }
+
+     50% {
+        background: radial-gradient(white, orange);
+        top: 70vh;
+        left: 70vw;
+     }
+
+     75% {
+        background: radial-gradient(white, red);
+        top: 70vh;
+        left: 100px;
+     }
+
+     100% {
+        background: radial-gradient(white, green);
+        top: 100px;
+        left: 100px;
+
+    }
+
+}
+
+@keyframes box {
+    0% {
+       background: radial-gradient(white, red);
+      transform: rotate(0deg);
+    }
+
+    25% {
+        background: radial-gradient(white, yellow);
+        transform: rotate(25deg);
+
+     }
+
+     50% {
+        background: radial-gradient(white, orange);
+        transform: rotate(50deg);
+
+     }
+
+     75% {
+        background: radial-gradient(white, red);
+        transform: rotate(75deg);
+
+     }
+
+     100% {
+        background: radial-gradient(white, green);
+        transform: rotate(100deg);
+
+
+    }
+
+}
+
+
+@keyframes h2 {
+    0% {
+       background: radial-gradient(white, red);
+      transform: rotate(0deg);
+    }
+
+    25% {
+        background: radial-gradient(white, yellow);
+        transform: rotate(25deg);
+
+     }
+
+     50% {
+        background: radial-gradient(white, orange);
+        transform: rotate(50deg);
+
+     }
+
+     75% {
+        background: radial-gradient(white, red);
+        transform: rotate(75deg);
+
+     }
+
+     100% {
+        background: radial-gradient(white, green);
+        transform: rotate(100deg);
+
+
+    }
+
+}
